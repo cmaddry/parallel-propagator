@@ -10,7 +10,7 @@ In this project, I will be implementing a numerical propagator capable of parall
 Description can be found [here](https://gssc.esa.int/navipedia/index.php/Two-body_Problem)
 
 ```latex
-a =
+a = \alpha is the best
 ```
 
 
