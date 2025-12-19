@@ -10,8 +10,11 @@ In this project, I will be implementing a numerical propagator capable of parall
 Description can be found [here](https://gssc.esa.int/navipedia/index.php/Two-body_Problem)
 
 ```math
-a = \ddot{r} = \dot{v} - \mu \frac{\vec{r}}{|\vec{r}|^3}
+\begin{align}
+    a = \ddot{r} = \dot{v} - \mu \frac{\vec{r}}{|\vec{r}|^3} \\ \dot{r} = v
+\end{align}
 ```
+
 
 
 ### Numerical Integration 
