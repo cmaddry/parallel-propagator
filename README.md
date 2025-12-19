@@ -18,7 +18,7 @@ We rewrite the two body mathematical equation into the two equations:
 ```
 With this, the equations becomes two first order ODEs, and we can now solve this with numerical integration methods.
 
-Given $$ \vec{r} $$, we can compute $$ \dot{v} $$
+Given $$\vec{r}$$ , we can compute $$\dot{v}$$
 
 
 ### Numerical Integration 
