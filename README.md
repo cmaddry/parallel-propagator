@@ -1,32 +1,15 @@
-# parallel-propagator
+# Parallel Computing Numerical Propagator
+In this project, I will be implementing a numerical propagator capable of parallel computations. The initial version will leverage [OpenMP](https://www.openmp.org/) with a GPU version planned for the future.The details of this project can be found in this README.
+
+## Background
 
 
 
-## Setup steps
-### Setup OpenMP following [this](https://www.geeksforgeeks.org/installation-guide/openmp-introduction-with-installation-guide/) guide.
+## Mathematical Formulation
+### Two-body Physics
 
-1. Sent the following command
-```bash
-echo |cpp -fopenmp -dM |grep -i open
-```
-
-2. Then
-```bash
-export OMP_NUM_THREADS=8
-```
+### Numerical Integration 
+#### Runge-Kutta Methods
 
 
-
-## Running
-I created the [test_code](/test_code/) to see if OpenMP was working properly.
-
-1. Chat wrote the test script [test.cpp](/test_code/test.cpp).
-
-2. The code can be ran with the following command:
-```bash
-g++ -O3 -fopenmp test.cpp -o test_output
-```
-The following output is generated in the test_output file:
-    Sum = 450000000
-    Time = 0.103597 seconds
-    Threads used = 8
+## Code implementation

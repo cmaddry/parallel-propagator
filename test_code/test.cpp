@@ -1,6 +1,8 @@
 #include <iostream>
 #include <omp.h>
 
+using namespace std;
+
 int main() {
     const int N = 100000000;
     long long sum = 0;
@@ -14,9 +16,9 @@ int main() {
 
     double end = omp_get_wtime();
 
-    std::cout << "Sum = " << sum << "\n";
-    std::cout << "Time = " << (end - start) << " seconds\n";
-    std::cout << "Threads used = " << omp_get_max_threads() << "\n";
+    cout << "Sum = " << sum << "\n";
+    cout << "Time = " << (end - start) << " seconds\n";
+    cout << "Threads used = " << omp_get_max_threads() << "\n";
 
     return 0;
 }
