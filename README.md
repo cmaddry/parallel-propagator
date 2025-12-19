@@ -9,7 +9,7 @@ In this project, I will be implementing a numerical propagator capable of parall
 ### Two-body Physics
 Description can be found [here](https://gssc.esa.int/navipedia/index.php/Two-body_Problem)
 
-```latex
+```math
 a = \alpha is the best
 ```
 
