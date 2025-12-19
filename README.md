@@ -7,6 +7,12 @@ In this project, I will be implementing a numerical propagator capable of parall
 
 ## Mathematical Formulation
 ### Two-body Physics
+Description can be found [here](https://gssc.esa.int/navipedia/index.php/Two-body_Problem)
+
+```latex
+a =
+```
+
 
 ### Numerical Integration 
 #### Runge-Kutta Methods
