@@ -1,27 +1,37 @@
 #include <iostream>
 #include "physics/gravity.h"
+#include "integrator/integrator.h"
+#include <math.h>
 
 using namespace std;
 
 int main(){
 
-    double x = 1.0;
-    double y = 2.0;
-    double z = 3.0;
-    double v_x = 1.0;
-    double v_y = 1.0;
-    double v_z = 1.0;
+    State state;
+    // Initial conditions for r and v
+    state.r[0] = 7000e3; //in meters
+    state.r[1] = 0;
+    state.r[2] = 0.0;
+    state.v[0] = 0.0;
+    state.v[1] = 7546.05; // in m/s
+    state.v[2] = 0.0;
 
-    double vec[] = {x, y, z, v_x, v_y, v_z};
-    double output_vec[6] = {};
-    int len = 6;
+    // Number of iterations and step size
+    int total_its = 6000;
+    int step_size = 10; // in seconds
 
-    two_body(vec, output_vec, len);
+    // Start stepping with the numerical integrator
+    for(int i = 0; i < total_its; i++){
+        cout << "Iteration #: " << i + 1 << endl;
+        integrator_func(state, step_size);
 
-    cout << "Here is the output vector: " << endl;
-    cout << "\t a_x: " << output_vec[0] << endl;
-    cout << "\t a_y: " << output_vec[1] << endl;
-    cout << "\t a_z: " << output_vec[2] << endl;
+        double distance = sqrt(state.r[0]*state.r[0] + state.r[1]*state.r[1] + state.r[2]*state.r[2]);
+
+        cout << "Distance from the center of the Earth: " << distance << endl;
+        cout << "For x = " << state.r[0] << endl;
+
+    }
+  
 
     return 0;
 }
