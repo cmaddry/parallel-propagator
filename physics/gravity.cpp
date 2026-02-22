@@ -13,8 +13,6 @@ double eucl_norm(double* vec){
     // Calculates Sqrt(x^2 + y^2 + z^2)
     distance = sqrt(vec[0]*vec[0] + vec[1]*vec[1] + vec[2]*vec[2]);
 
-    cout << "Distance from the Earth = " << distance << endl;
-    
     // Returns the calculated value
     return distance;
 }

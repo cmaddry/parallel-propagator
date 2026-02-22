@@ -9,5 +9,4 @@ struct State
 
 void integrator_func(State& state, double step_size);
 
-
 #endif 

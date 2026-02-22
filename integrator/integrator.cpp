@@ -11,7 +11,6 @@ struct State
     double v[3];
 };
 
-
 void integrator_func(State& state, double step_size){
 
     //Declaration of structs
@@ -66,40 +65,5 @@ void integrator_func(State& state, double step_size){
     for(int i = 0; i < 3; i++){
         state.r[i] = state.r[i] + (dt/6)*(k1.r[i] + 2*k2.r[i] + 2*k3.r[i] + k4.r[i]);
         state.v[i] = state.v[i] + (dt/6)*(k1.v[i] + 2*k2.v[i] + 2*k3.v[i] + k4.v[i]);
-
-        cout << "\tstate.r[" << i << "]: " << state.r[i] << endl;
-        cout << "\tstate.v[" << i << "]: " << state.v[i] << endl;
     }
 }
-
-
-// int main(){
-
-//     State state;
-//     // Initial conditions for r and v
-//     state.r[0] = 7000e3; //in meters
-//     state.r[1] = 0;
-//     state.r[2] = 0.0;
-//     state.v[0] = 0.0;
-//     state.v[1] = 7546.05; // in m/s
-//     state.v[2] = 0.0;
-
-//     // Number of iterations and step size
-//     int total_its = 6000;
-//     int step_size = 10; // in seconds
-
-//     // Start stepping with the numerical integrator
-//     for(int i = 0; i < total_its; i++){
-//         cout << "Iteration #: " << i + 1 << endl;
-//         integrator(state, step_size);
-
-//         double distance = sqrt(state.r[0]*state.r[0] + state.r[1]*state.r[1] + state.r[2]*state.r[2]);
-
-//         cout << "Distance from the center of the Earth: " << distance << endl;
-//         cout << "For x = " << state.r[0] << endl;
-
-//     }
-  
-
-//     return 0;
-// }
