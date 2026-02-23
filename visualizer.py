@@ -24,15 +24,16 @@ test_data = pd.read_csv('output/output.txt', names=["x","y","z"])
 
 
 # Plotting of the globe and model output
-fig = px.scatter_3d(test_data, x = "x", y = "y", z = "z")
-fig.update_traces(marker_size=1)
+fig = px.scatter_3d(test_data, x = "x", y = "y", z = "z", color="z")
+fig.update_traces(marker=dict(size = 1, color = "#990066"))
 
 fig.add_trace(go.Scatter3d(
     x=x,
     y=y,
     z=z,
+    name="Earth Outline",
     mode="markers",
-    marker=dict(size=0.4),
+    marker=dict(size=0.4, color="#80b3ff"),
 ))
 
 fig.show()
