@@ -43,7 +43,7 @@ To account for this irregular shape, the J2 perturbation is added to our model.
 
 ```math
 \begin{align}
-    k = \frac{3}{2} \times J2 \times \mu \times \R_e^2 / r^5
+    k = \frac{3}{2} \times J2 \times \mu \times R_e^2 / r^5
 \end{align}
 ```
 
