@@ -40,18 +40,24 @@ The J2 perturbation (or gravitational perturbation) is a result of the Earth's s
 
 To account for this irregular shape, the J2 perturbation is added to our model.
 
+```math
+\begin{align}
+    a_{x} &= \ kx\Big(5 \frac{z^2}{r^2} - 1\Big) \\ a_{y} &= \ ky\Big(5 \frac{z^2}{r^2} - 1\Big) \\ a_{z} &= \ kz\Big(5 \frac{z^2}{r^2} - 3\Big)
+\end{align}
+```
 
+where 
 ```math
 \begin{align}
     k = \frac{3}{2} \times J2 \times \mu \times R_e^2 / r^5
 \end{align}
 ```
 
-
+and 
 
 ```math
 \begin{align}
-    a_{x} &= \ kx\Big(5 \frac{z^2}{r^2} - 1\Big) \\ a_{y} &= \ ky\Big(5 \frac{z^2}{r^2} - 1\Big) \\ a_{z} &= \ kz\Big(5 \frac{z^2}{r^2} - 3\Big)
+    \mu &= 3.986004418\times 10^{14} \ m^3/s^2 \\ R_e^2 &= 6378137.0 \ m\\ r^5 &= 1.08262668 \times 10^{-3}
 \end{align}
 ```
 
