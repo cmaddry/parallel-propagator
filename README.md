@@ -28,9 +28,11 @@ Because these perturbations are forces, they will effectively change the acceler
 
 ```math
 \begin{align}
-    a_{total} = a_{two \ body} + a{J2} + a_{drag} + a_{3^{rd} body}
+    a_{total} = a_{two \ body} + a_{J2} + a_{drag} + a_{3^{rd} \ body} + ...
 \end{align}
 ```
+
+where they change the effective acceleration of the satellite.
 
 
 #### J2 Perturbation
@@ -38,6 +40,24 @@ The J2 perturbation (or gravitational perturbation) is a result of the Earth's s
 
 To account for this irregular shape, the J2 perturbation is added to our model.
 
+
+```math
+\begin{align}
+    k = \frac{3}{2} \times J2 \times \mu \times \R_e^2 / r^5
+\end{align}
+```
+
+
+
+```math
+\begin{align}
+    a_{total} = a_{two \ body} + a_{J2} + a_{drag} + a_{3^{rd} \ body} + ...
+\end{align}
+```
+
+
+
+The derivation of which can be found in Bate, R., Mueller, D., White, J., *Fundamentals of Astrodynamics*, Dover, 1971.
 
 
 
