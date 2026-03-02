@@ -63,7 +63,7 @@ and
 
 
 
-The derivation of which can be found in:
+The derivation of which can be found in: \\
 &nbsp;&nbsp;&nbsp;&nbsp; Bate, R., Mueller, D., White, J., *Fundamentals of Astrodynamics*, Dover, 1971.
 
 
