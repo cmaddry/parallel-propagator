@@ -28,7 +28,7 @@ Because these perturbations are forces, they will effectively change the acceler
 
 ```math
 \begin{align}
-    a_{total} = a_{two / body} + a{J2} + a_{drag} + a_{3^{rd} body}
+    a_{total} = a_{two \ body} + a{J2} + a_{drag} + a_{3^{rd} body}
 \end{align}
 ```
 
