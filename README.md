@@ -52,6 +52,7 @@ To account for this irregular shape, the J2 perturbation is added to our model.
 ```math
 \begin{align}
     a_{total} = kx\Big(5 \frac{z^2}{r^2} - 1\Big)
+\end{align}
 ```
 
 
