@@ -4,7 +4,6 @@
 #include <string>
 #include <math.h>
 
-#include "physics/gravity.h"
 #include "integrator/integrator.h"
 
 using namespace std;
@@ -30,7 +29,7 @@ int main(){
 
 
     State state;
-    // // Initial conditions for r and v
+    // Initial conditions for r and v
     // state.r[0] = 7e6; //in meters
     // state.r[1] = 0;
     // state.r[2] = 0.0;
@@ -38,6 +37,13 @@ int main(){
     // state.v[1] = 7546.05; // in m/s
     // state.v[2] = 0.0;
 
+    // // Initial conditions for r and v
+    // state.r[0] = 7e6; //in meters
+    // state.r[1] = 0;
+    // state.r[2] = 0.0;
+    // state.v[0] = 0.0;
+    // state.v[1] = 6500.0; // in m/s
+    // state.v[2] = 3300.0;
 
     state.r[0] = stod(initial_vec[0])*1000; //in meters
     state.r[1] = stod(initial_vec[1])*1000;
@@ -47,8 +53,8 @@ int main(){
     state.v[2] = stod(initial_vec[5])*1000;
 
     // Number of iterations and step size
-    int total_its = 100000;
-    int step_size = 1.0; // in seconds
+    int total_its = 345600;
+    int step_size = 1; // in seconds
 
     // Start stepping with the numerical integrator
     for(int i = 0; i < total_its; i++){

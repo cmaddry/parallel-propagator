@@ -24,16 +24,13 @@ Given $$\vec{r}$$, we can compute $$\dot{v}$$
 ### Perturbations
 In the context of satellite motion, perturbations are additional forces that act on the satellite in orbit around the Earth. Simple two-body motion does not account for these additional forces, so we must add them to our model.
 
-Because these perturbations are forces, they will effectively change the acceleration of our two-body motion. In practice, these perurbations will take the following form:
+Because these perturbations are forces, they will effectively change the acceleration of our two-body motion. In practice, these perurbations will change the satellites acceleratioan by taking following form:
 
 ```math
 \begin{align}
     a_{total} = a_{two \ body} + a_{J2} + a_{drag} + a_{3^{rd} \ body} + ...
 \end{align}
 ```
-
-where they change the effective acceleration of the satellite.
-
 
 #### J2 Perturbation
 The J2 perturbation (or gravitational perturbation) is a result of the Earth's shape. Instead of being a perfect sphere, Earth has a slight bulge near the equator. 
@@ -62,8 +59,7 @@ and
 ```
 
 
-
-The derivation of which can be found in:
+The derivation can be found here:
 
 &nbsp;&nbsp;&nbsp;&nbsp; Bate, R., Mueller, D., White, J., *Fundamentals of Astrodynamics*, Dover, 1971.
 
