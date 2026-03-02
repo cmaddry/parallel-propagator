@@ -57,13 +57,14 @@ and
 
 ```math
 \begin{align}
-    \mu &= 3.986004418\times 10^{14} \ m^3/s^2 \\ R_e^2 &= 6378137.0 \ m\\ r^5 &= 1.08262668 \times 10^{-3}
+    \mu &= 3.986004418\times 10^{14} \ m^3/s^2 \\ R_e^2 &= 6378137.0 \ m \\ J2 &= 1.08262668 \times 10^{-3}
 \end{align}
 ```
 
 
 
-The derivation of which can be found in Bate, R., Mueller, D., White, J., *Fundamentals of Astrodynamics*, Dover, 1971.
+The derivation of which can be found in:
+&nbsp;&nbsp;&nbsp;&nbsp; Bate, R., Mueller, D., White, J., *Fundamentals of Astrodynamics*, Dover, 1971.
 
 
 
